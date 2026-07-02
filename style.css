@@ -1,0 +1,200 @@
+:root {
+    --color-primario: #2563eb;
+    --color-secundario: #64748b;
+    --color-exito: #16a34a;
+    --color-error: #dc2626;
+    --color-advertencia: #f59e0b;
+
+    --color-fondo: #f4f6f9;
+    --color-texto: #1e293b;
+    --color-blanco: #ffffff;
+
+    --radio:10px;
+    --sombra:0 4px 12px rgba(0,0,0,.10);
+}
+/* ==========================
+   CONFIGURACIÓN GENERAL
+========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 40px;
+}
+/* ==========================
+   TÍTULOS
+========================== */
+
+h1{
+    text-align: center;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-bottom: 20px;
+    color: var(--color-primario);
+}
+/* ==========================
+   SECCIONES
+========================== */
+
+section{
+    background: var(--color-blanco);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+/* ==========================
+   BOTONES
+========================== */
+
+.btn{
+    border: none;
+    padding: 12px 22px;
+    border-radius: var(--radio);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.btn-primary{
+    background: var(--color-primario);
+}
+
+.btn-secondary{
+    background: var(--color-secundario);
+}
+
+.btn-danger{
+    background: var(--color-error);
+}
+
+.btn:hover{
+    opacity: .85;
+}
+
+.btn:focus{
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+.btn{
+    border: none;
+    padding: 12px 22px;
+    border-radius: var(--radio);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary{
+    background: var(--color-primario);
+}
+
+.btn-secondary{
+    background: var(--color-secundario);
+}
+
+.btn-danger{
+    background: var(--color-error);
+}
+
+.btn:hover{
+    opacity: .85;
+}
+
+.btn:focus{
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+/* ==========================
+   FORMULARIOS
+========================== */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:var(--radio);
+    font-size:16px;
+}
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:var(--radio);
+    font-size:16px;
+}
+input:focus,
+select:focus{
+
+    border-color:var(--color-primario);
+
+    box-shadow:0 0 8px rgba(37,99,235,.3);
+
+    outline:none;
+
+}
+/* ==========================
+   TARJETA (CARD)
+========================== */
+
+.card{
+    background: var(--color-blanco);
+    border-radius: var(--radio);
+    padding: 20px;
+    box-shadow: var(--sombra);
+    border-left: 6px solid var(--color-primario);
+}
+.card h3{
+    color: var(--color-primario);
+    margin-bottom: 15px;
+}
+.card p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+/* ==========================
+   BADGES
+========================== */
+
+.badge{
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.alta{
+    background: var(--color-error);
+}
+.media{
+    background: var(--color-advertencia);
+    color: black;
+}
+.baja{
+    background: var(--color-exito);
+}
