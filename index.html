@@ -1,110 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design System Help Desk</title>
+    <title>UI Kit - Sistema de Gestión de Incidentes</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1>Design System - Help Desk</h1>
-<p>Biblioteca de Componentes UI</p>
 
-<section>
+    <header>
+        <h1>UI Kit - Sistema de Gestión de Incidentes</h1>
+        <p>Biblioteca de componentes reutilizables desarrollada con CSS3.</p>
+    </header>
 
-    <h2>Botones</h2>
+    <!-- BOTONES -->
+    <section>
 
-    <button class="btn btn-primary">
-        Guardar
-    </button>
+        <h2>Botones</h2>
 
-    <button class="btn btn-secondary">
-        Cancelar
-    </button>
+        <button class="btn btn-primary">Registrar</button>
 
-    <button class="btn btn-danger">
-        Eliminar
-    </button>
+        <button class="btn btn-success">Guardar</button>
 
-</section>
+        <button class="btn btn-danger">Eliminar</button>
 
-<section>
+        <button class="btn btn-warning">Editar</button>
 
-    <h2>Formularios</h2>
+    </section>
 
-    <label for="nombre">
-        Nombre del usuario
-    </label>
+    <!-- FORMULARIO -->
+    <section>
 
-    <input
-        type="text"
-        id="nombre"
-        placeholder="Ingrese el nombre">
+        <h2>Formulario</h2>
 
-    <br><br>
+        <form class="formulario">
 
-    <label for="categoria">
-        Categoría
-    </label>
+            <label>Nombre del usuario</label>
+            <input type="text" placeholder="Ingrese su nombre">
 
-    <select id="categoria">
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="Ingrese su correo">
 
-        <option>Hardware</option>
+            <label>Tipo de incidente</label>
 
-        <option>Software</option>
+            <select>
 
-        <option>Redes</option>
+                <option>Seleccione una opción</option>
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Red</option>
 
-    </select>
+            </select>
 
-</section>
+            <label>Descripción</label>
 
-<section>
+            <textarea placeholder="Describa el incidente"></textarea>
 
-    <h2>Tarjeta del Ticket</h2>
+            <button class="btn btn-primary" type="submit">Enviar</button>
 
-    <div class="card">
+        </form>
 
-        <h3>Incidente #001</h3>
+    </section>
 
-        <p>
-            Usuario:
-            Ana Pérez
-        </p>
+    <!-- CARDS -->
 
-        <p>
-            Estado:
-            Pendiente
-        </p>
+    <section>
 
-        <p>
-            Descripción:
-            La impresora no responde.
-        </p>
+        <h2>Tarjetas (Cards)</h2>
 
-    </div>
+        <div class="contenedor-cards">
 
-</section>
+            <div class="card">
 
-<section>
+                <h3>Incidente #001</h3>
 
-    <h2>Prioridades</h2>
+                <p>Error de conexión con el servidor principal.</p>
 
-    <span class="badge alta">
-        Alta
-    </span>
+            </div>
 
-    <span class="badge media">
-        Media
-    </span>
+            <div class="card">
 
-    <span class="badge baja">
-        Baja
-    </span>
+                <h3>Incidente #002</h3>
 
-</section>
+                <p>Equipo sin acceso a Internet.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Incidente #003</h3>
+
+                <p>Actualización del sistema pendiente.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ALERTAS -->
+
+    <section>
+
+        <h2>Alertas</h2>
+
+        <div class="alert success">
+
+            ✔ Incidente registrado correctamente.
+
+        </div>
+
+        <div class="alert danger">
+
+            ✖ Error al guardar el incidente.
+
+        </div>
+
+        <div class="alert warning">
+
+            ⚠ Revise los datos ingresados.
+
+        </div>
+
+    </section>
+
 </body>
 
 </html>
