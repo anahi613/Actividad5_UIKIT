@@ -1,6 +1,4 @@
-/*=============================
- VARIABLES CSS
-=============================*/
+/*VARIABLES CSS*/
 
 :root{
 
@@ -24,9 +22,7 @@
 
 }
 
-/*=============================
- MODELO DE CAJAS
-=============================*/
+/*MODELO DE CAJAS*/
 
 *{
 
@@ -38,9 +34,7 @@ box-sizing:border-box;
 
 }
 
-/*=============================
- BODY
-=============================*/
+/*BODY*/
 
 body{
 
@@ -54,9 +48,7 @@ padding:30px;
 
 }
 
-/*=============================
- HEADER
-=============================*/
+/*HEADER*/
 
 header{
 
@@ -74,9 +66,7 @@ margin-bottom:10px;
 
 }
 
-/*=============================
- SECCIONES
-=============================*/
+/*SECCIONES*/
 
 section{
 
@@ -100,9 +90,7 @@ color:var(--color-primario);
 
 }
 
-/*=============================
- BOTONES
-=============================*/
+/*BOTONES*/
 
 .btn{
 
@@ -156,9 +144,7 @@ color:black;
 
 }
 
-/*=============================
- FORMULARIOS
-=============================*/
+/*FORMULARIOS*/
 
 .formulario{
 
@@ -178,10 +164,27 @@ font-weight:bold;
 
 }
 
+.formulario{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.formulario label{
+
+margin-top:15px;
+
+margin-bottom:6px;
+
+font-weight:bold;
+
+}
+
+/* Estilo normal de los campos */
 .formulario input,
-
 .formulario select,
-
 .formulario textarea{
 
 padding:12px;
@@ -193,6 +196,19 @@ border-radius:6px;
 font-size:15px;
 
 width:100%;
+
+}
+
+/* Estilo cuando el usuario hace clic */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus{
+
+outline:none;
+
+border:2px solid var(--color-primario);
+
+box-shadow:0 0 8px rgba(13,110,253,.4);
 
 }
 
@@ -212,9 +228,7 @@ width:180px;
 
 }
 
-/*=============================
- CARDS
-=============================*/
+/*CARDS*/
 
 .contenedor-cards{
 
@@ -258,9 +272,9 @@ color:var(--color-primario);
 
 }
 
-/*=============================
+/*
  ALERTAS
-=============================*/
+*/
 
 .alert{
 
@@ -301,5 +315,12 @@ background:#fff3cd;
 color:#664d03;
 
 border-left:6px solid var(--color-advertencia);
+
+}
+.btn:focus{
+
+outline:3px solid #90caf9;
+
+outline-offset:2px;
 
 }
